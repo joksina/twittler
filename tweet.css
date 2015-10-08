@@ -1,0 +1,43 @@
+body{
+	background-color: lightblue;
+}
+
+img{
+	height: 70px;
+	width: 70px;
+	text-align: bottom;
+}
+
+h2{
+	font-size: 50px;
+	color: #006599;
+	text-align: center;
+}
+
+form{
+  text-align: center;
+}
+
+input[type=button] {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 2px 8px;
+  transition: all .1s linear;
+}
+input[type=button]:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 14px;
+}
