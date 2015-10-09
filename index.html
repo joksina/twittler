@@ -3,25 +3,15 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="time.js"></script>
+    <link rel="stylesheet" type="text/css" href="tweet.css">
+    <title> Twittler </title>
   </head>
   <body>
-    <script>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
+    <script src="tweet.js"></script>
+    <footer id="foot01"></footer>
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
 
-      });
-
-    </script>
   </body>
 </html>
