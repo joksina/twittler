@@ -1,5 +1,6 @@
 body{
-	background-color: lightblue;
+	background-image: url('back.png');
+  background-repeat: repeat-y;
 }
 
 img{
@@ -11,14 +12,12 @@ img{
 h2{
 	font-size: 50px;
 	color: #006599;
-	text-align: center;
-}
-
-form{
   text-align: center;
+	
 }
 
-input[type=button] {
+
+button {
   border: 0;
   background: #0087cc;
   border-radius: 4px;
@@ -31,13 +30,60 @@ input[type=button] {
   padding: 2px 8px;
   transition: all .1s linear;
 }
-input[type=button]:active {
+button:active {
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
 }
 
-.center {
-  text-align: center;
-  margin: 0 auto;
-  line-height: 14px;
+
+.user {
+  color: #006599;
+  font-size: 20px;
+}
+
+.back {
+  width: 1000px;
+  display: none;
+}
+.tweet {
+  background: powderblue;
+  background-size: 10px 20px;
+  border-radius: 10px;
+  text-align: left;
+  border: 1px solid grey;
+  margin: 0px 5px 5px 5px;
+  padding: 5px;
+  line-height: 18px;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.time {
+  color: grey;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul#menu {
+    padding: 0;
+    margin-bottom: 11px;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: #556C8C;
 }
