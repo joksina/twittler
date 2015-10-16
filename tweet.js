@@ -60,7 +60,7 @@ function showTweet(show){
   while(index >= count){
     //getting twitts and users
     var tweet = list[count];
-    var $tweet = $('<div></div>').addClass('tweet');
+    var $tweet = $('<div class="tweet"></div>');
     $tweet.append('<a href="#" class="user">@' + tweet.user + '</a> ' + '<br>' + tweet.message + '<time class="time"> - ' + time(tweet.created_at) + '<br>' + '</time><br>');
     $tweet.prependTo($(".tweets"));
 
@@ -86,6 +86,8 @@ $(".tweets").on("click", "a", function(event) {
   var person = $(event.target).text().substring(1);
   $(".back").show();
   ready = true;
+
+
   //set the interval for person
   //to keep showing the twittler's twitts when clicked
   interval(person);
