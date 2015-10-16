@@ -60,7 +60,7 @@ function showTweet(show){
   while(index >= count){
     //getting twitts and users
     var tweet = list[count];
-    var $tweet = $('<div class="tweet"></div>');
+    var $tweet = $('<div class="twet"></div>');
     $tweet.append('<a href="#" class="user">@' + tweet.user + '</a> ' + '<br>' + tweet.message + '<time class="time"> - ' + time(tweet.created_at) + '<br>' + '</time><br>');
     $tweet.prependTo($(".tweets"));
 
